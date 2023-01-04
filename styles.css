@@ -1,0 +1,49 @@
+:root {
+    --background-blue: rgb(14, 17, 27);
+    --highlight-orange: rgb(255, 174, 0);
+}
+
+body {
+    /* Background styling */
+    background-color: var(--background-blue);
+    /* background-image: url(images/temporary_background.webp); */
+    background-image: linear-gradient(to bottom,
+    rgba(14, 17, 27, 0) 15rem,
+    rgba(14, 17, 27, 0.75) 45rem,
+    rgba(14, 17, 27, 1) 60rem),
+    url(images/temporary_background.webp);
+    background-size: contain, cover;
+    background-position: 50% 0%;
+    background-repeat: no-repeat;
+    position: relative;
+
+    /* Text styling */
+    color: white;
+    font-family: SF Pro;
+
+    height: 1440px;
+}
+
+h1 {
+    text-align: center;
+
+    font-size: 48pt;
+    font-weight: bold;
+
+    margin: 0;
+    padding: 0;
+    height:fit-content;
+    line-height: 1;
+}
+
+h2 {
+    text-align: center;
+
+    color: var(--highlight-orange);
+    font-size: 30pt;
+    font-weight: 200;
+
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
