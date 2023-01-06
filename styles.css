@@ -13,16 +13,25 @@ body {
     rgba(14, 17, 27, 0.8) 45rem,
     rgba(14, 17, 27, 1) 70rem),
     url(resources/images/background_image.jpg);
-    background-size: contain, cover;
+    background-size: contain, 100vw;
     background-position: 50% 0%;
     background-repeat: no-repeat;
+    /* background-attachment: scroll, fixed; */
     position: relative;
 
     /* Text styling */
     color: white;
     font-family: SF Pro Display;
 
-    height: 1440px
+    /* height: 1000px; */
+    display: grid;
+    place-items: center;
+}
+
+@media (max-width: 2560px) {
+    body {
+        background-size: cover, 2560px;
+    }
 }
 
 h1 {
@@ -47,4 +56,28 @@ h2 {
     margin: 0;
     padding: 0;
     line-height: 1
+}
+
+main {
+    width: 50%;
+}
+
+header {
+    background-color: rgba(225, 0, 0, 0.3);
+
+    display: inline-block;
+    width: 70%;
+}
+
+#logo {
+    float: left;
+}
+
+#MH_logo {
+    height: 100px;
+    width: 100px;
+}
+
+#top-navigation {
+    float: right;
 }
