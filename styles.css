@@ -10,10 +10,8 @@ html {
 
 
 body {
-    /* Background styling */
     background-color: var(--background-blue);
 
-    /* background-image: url(images/temporary_background.webp); */
     background-image: linear-gradient(to bottom,
     rgba(14, 17, 27, 0.3) 15rem,
     rgba(14, 17, 27, 0.8) 45rem,
@@ -23,7 +21,6 @@ body {
     background-position: 50% 0%;
     background-repeat: no-repeat;
 
-    /* Text styling */
     color: white;
     font-family: SF Pro;
 
@@ -52,54 +49,42 @@ header {
     margin-top: 25px;
 }
 
-/* @media screen and (max-width: 767px) {
-    header {
-        width: 1fr;
-        margin: 10px;
-    } 
-} */
-
-/* width: 1fr;
-    max-width: 960px;
-    margin: 10px; */
-
 #logo {
-    /* background-color: rgb(0, 225, 0, 0.3); */
     width: 60px;
     float: left;
 }
 
 #top-navigation {
-    /* background-color: rgb(0, 225, 0, 0.3); */
-    /* float: right; */
     display: grid;
     grid-auto-flow: auto;
-    grid-template-columns: repeat(auto-fit, 160px);
+    grid-template-columns: repeat(auto-fit, 9rem);
     justify-content: right;
+}
+
+.nav-button-container {
+    text-align: center;
+    justify-self: right;
+    width: 7rem;
+
 }
 
 @media screen and (max-width: 767px) {
     #top-navigation {
         grid-auto-flow: row;
         grid-template-columns:max-content;
-    } 
-}
+    }
 
-.nav-button-container {
-    /* background-color: rgba(225, 0, 0, 0.3); */
-    /* text-align: right; */
-    /* display: grid; */
-    text-align: right;
+    .nav-button-container {
+        text-align: right;
+    }
 }
 
 .top-navigation-link {
-    /* background-color: rgba(225, 0, 0, 0.3); */
     color: white;
     text-decoration: none;
     font-family: SF Pro;
     font-size: 18pt;
     font-weight: 100;
-    /* filter: drop-shadow(0px 0px 7px rgba(0, 0, 0, 0.75)); */
 }
 
 .top-navigation-link:hover {
@@ -127,7 +112,6 @@ header {
 .headline {
     margin: 5px;
     padding-bottom: 5vw;
-    /* background-color: rgba(225, 0, 0, 0.1); */
     white-space: nowrap;
 }
 
@@ -139,8 +123,6 @@ header {
 
     margin: 0px;
     padding: 0px;
-    /* height:fit-content; */
-    /* line-height: 1 */
 }
 
 .sub-headline {
@@ -164,16 +146,6 @@ header {
         font-size: 18pt;
     }
 }
-
-/* @media screen and (max-width: 424px){
-    .main-headline {
-        font-size: 30pt
-    }
-
-    .sub-headline {
-        font-size: 20pt;
-    }
-} */
 
 main {
     width: 1fr;
