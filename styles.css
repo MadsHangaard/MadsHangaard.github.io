@@ -184,6 +184,8 @@ main {
     margin-top: 15vw;
 
     padding: 2vw 5%;
+
+    height: fit-content;
 }
 
 @media screen and (max-width: 767px) {
