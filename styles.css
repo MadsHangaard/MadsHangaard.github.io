@@ -211,8 +211,8 @@ p {
     left: 0;
     right: 0;
     overflow: hidden;
-	background-color:red;
-	opacity: 0.1;
+	/* background-color:red; */
+	/* opacity: 0.1; */
 }
 
 path {
