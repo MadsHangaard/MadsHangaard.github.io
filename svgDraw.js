@@ -8,8 +8,6 @@ function drawPath(svg, path, startX, startY, endY) {
 }
 
 function connectElements(svg, path, startElem, endElem) {
-    var svgContainer= $("#svgContainer");
-
     if(startElem.offset().top > endElem.offset().top){
         var temp = startElem;
         startElem = endElem;
@@ -23,6 +21,9 @@ function connectElements(svg, path, startElem, endElem) {
     var startY = startCoord.top + 14
 
     var endY = endCoord.top + 14;
+
+    console.log(window.innerHeight)
+    console.log(window.outerHeight)
 
     // call function for drawing the path
     drawPath(svg, path, startX, startY, endY);
