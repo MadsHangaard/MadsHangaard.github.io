@@ -1,10 +1,12 @@
 :root {
     --background-blue: rgb(14, 17, 27);
+    --page-blue: rgb(9, 10, 17);
     --highlight-orange: rgb(255, 174, 0);
 }
 
 html {
     scroll-behavior: smooth;
+    position: relative;
 }
 
 
@@ -29,6 +31,11 @@ body {
 
     display: grid;
     place-items: center;
+}
+
+::selection {
+    background: var(--highlight-orange);
+    color: var(--background-blue)
 }
 
 @media screen and (max-width: 2560px) {
@@ -162,4 +169,169 @@ main {
 .reel {
     width: 1fr !important;
     height: auto !important;
+}
+
+.page-container {
+    background-color: var(--page-blue);
+
+    margin-top: 15vw;
+
+    padding: 2vw 5%;
+}
+
+@media screen and (max-width: 767px) {
+    .page-container {
+        background-color: var(--page-blue);
+    
+        margin-top: 15vw;
+        padding: 2vw 5%;
+    }
+}
+
+.text-container {
+    margin-bottom: 60px;
+}
+
+p {
+    font-family: SF Pro;
+    font-size: 12pt;
+}
+
+#svgContainer { 
+	z-index: 1;
+	position:absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+	/* background-color:silver; */
+	/* opacity: 0.5; */
+}
+
+#svg1 {
+    /* background-color: rgba(0, 225, 0, 0.2) */
+}
+
+path {
+    stroke: var(--highlight-orange);
+    fill: none;
+}
+
+.timeline-container {
+    display: grid;
+    grid-auto-flow: row;
+    justify-content: left;
+    /* background-color: rgba(225, 0, 0, 0.1); */
+    grid-template-rows: 300px;
+}
+
+.timeline-item {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 150px 40px 1fr;
+    /* background-color: rgba(0, 225, 0, 0.1); */
+}
+
+.time-label-container {
+    text-align: right;
+    /* background-color: rgba(0, 0, 225, 0.1); */
+}
+
+.timeline-dot {
+    display: grid;
+    justify-content: center;
+    /* align-self: center; */
+    /* background-color: rgba(225, 225, 0, 0.1) */
+}
+
+ul {
+    margin: 0px 0px;
+    padding: 0px;
+    display: grid;
+    justify-content: center;
+}
+
+li {
+    width: 12px;
+    height: 12px;
+    text-align: center;
+    line-height: 2em;
+    border-radius: 1em;
+    background: var(--highlight-orange);
+    margin-top: 7.5px;
+    /* margin-bottom: 54px; */
+    padding: 0px;
+    display: inline-block;
+    color: white;
+    position: relative;
+}
+
+/* li::before{
+content: '';
+position: absolute;
+top: -5.5em;
+left: 0.35em;
+width: .05em;
+height: 5.5em;
+background: var(--highlight-orange);
+z-index: 0;
+} */
+
+/* #first-dot::before {
+    display: none;
+} */
+/* li:first-child::before {
+display: none;
+} */
+
+/* .timeline-text {
+    margin-top: 20px;
+} */
+
+.time-label {
+    margin-top: 5px;
+    /* margin-bottom: 54px; */
+    font-weight: 800;
+}
+
+.time-label-small {
+    margin-top: 5px;
+    /* margin-bottom: 54px; */
+    font-weight: 800;
+    display: none;
+}
+
+@media screen and (max-width: 630px) {
+    .timeline-item {
+        display: grid;
+        grid-auto-flow: column;
+        grid-template-columns: 85px 40px 1fr;
+        /* background-color: rgba(0, 225, 0, 0.1); */
+    }
+
+    .time-label {
+        display: none;
+    }
+
+    .time-label-small {
+        display: grid;
+        font-weight: 400;
+    }
+}
+
+/* .timeline-text-subcontainer {
+    margin-top: 5px;
+    margin-bottom: 35px;
+} */
+
+.timeline-text {
+    font-weight: 800;
+    margin: 0px;
+    margin-top: 5px;
+}
+
+.timeline-subtext {
+    font-weight: 200;
+    margin: 0px;
 }
