@@ -215,9 +215,6 @@ p {
 	opacity: 0.1;
 }
 
-#svg {
-}
-
 path {
     stroke: var(--highlight-orange);
     fill: none;

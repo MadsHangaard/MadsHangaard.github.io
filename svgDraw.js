@@ -22,9 +22,6 @@ function connectElements(svg, path, startElem, endElem) {
 
     var endY = endCoord.top + 14;
 
-    console.log(window.innerHeight)
-    console.log(window.outerHeight)
-
     // call function for drawing the path
     drawPath(svg, path, startX, startY, endY);
 
