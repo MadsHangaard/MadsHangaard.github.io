@@ -7,6 +7,9 @@
 html {
     scroll-behavior: smooth;
     position: relative;
+
+    min-height: fill-available;
+    min-height: -webkit-fill-available;
 }
 
 
@@ -31,6 +34,10 @@ body {
 
     display: grid;
     place-items: center;
+
+    min-height: 100vh;
+    min-height: fill-available;
+    min-height: -webkit-fill-available;
 }
 
 ::selection {

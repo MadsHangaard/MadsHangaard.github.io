@@ -17,7 +17,6 @@ function connectElements(svg, path, startElem, endElem) {
     }
 
     var startCoord = startElem.offset();
-    console.log("startCoord:" + startElem.offset().top);
     var endCoord   = endElem.offset();
 
     var startX = startCoord.left + 0.5*startElem.outerWidth();
