@@ -205,19 +205,17 @@ p {
 }
 
 #svg-container { 
-	z-index: 1;
-	position:fixed;
+	position:absolute;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
     overflow: hidden;
 	background-color:red;
-	opacity: 0.2;
+	opacity: 0.1;
 }
 
-#svg1 {
-    /* background-color: rgba(0, 225, 0, 0.2) */
+#svg {
 }
 
 path {
