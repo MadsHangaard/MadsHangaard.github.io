@@ -43,13 +43,19 @@ $(window).resize(function () {
     connectAll();
 });
 
-window.ready(function() {
+$(document).ready(function() {
     
     // reset svg each time 
     $("#svg1").attr("height", "0");
     $("#svg1").attr("width", "0");
     connectAll();
 });
+
+window.ready = function () {
+    $("#svg1").attr("height", "0");
+    $("#svg1").attr("width", "0");
+    connectAll();
+};
 
 window.onload = function () {
     // reset svg each time 
