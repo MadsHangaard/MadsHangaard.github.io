@@ -43,7 +43,7 @@ $(window).resize(function () {
     connectAll();
 });
 
-$(document).ready(function() {
+window.ready(function() {
     
     // reset svg each time 
     $("#svg1").attr("height", "0");
