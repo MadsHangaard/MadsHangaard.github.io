@@ -204,20 +204,18 @@ p {
     font-size: 12pt;
 }
 
-#svgContainer { 
-	z-index: 1;
+#svg-container { 
 	position:absolute;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
     overflow: hidden;
-	/* background-color:silver; */
-	/* opacity: 0.5; */
+	background-color:red;
+	opacity: 0.1;
 }
 
-#svg1 {
-    /* background-color: rgba(0, 225, 0, 0.2) */
+#svg {
 }
 
 path {
