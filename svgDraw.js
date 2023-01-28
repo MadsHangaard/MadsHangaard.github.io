@@ -22,8 +22,8 @@ function connectElements(svg, path, startElem, endElem) {
 
     var endY = endCoord.top + 14;
 
-    console.log(window.innerHeight)
-    console.log(window.outerHeight)
+    console.log("innerHeight: " + window.innerHeight)
+    console.log("outerHieght: " + window.outerHeight)
 
     // call function for drawing the path
     drawPath(svg, path, startX, startY, endY);
@@ -43,13 +43,13 @@ $(window).resize(function () {
     connectAll();
 });
 
-// $(document).ready(function() {
+$(document).ready(function() {
     
-//     // reset svg each time 
-//     $("#svg1").attr("height", "0");
-//     $("#svg1").attr("width", "0");
-//     connectAll();
-// });
+    // reset svg each time 
+    $("#svg1").attr("height", "0");
+    $("#svg1").attr("width", "0");
+    connectAll();
+});
 
 window.onload = function () {
     // reset svg each time 
