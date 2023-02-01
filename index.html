@@ -4,21 +4,11 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script
-  src="https://code.jquery.com/jquery-3.6.3.min.js"
-  integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
-  crossorigin="anonymous"></script>
-  <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> -->
   <link rel="stylesheet" type="text/css" href="styles.css">
   <link rel="stylesheet" type="text/css" href="fonts.css">
   <title>Mads Hangaard Portfolio</title>
 </head>
 <body id="top">
-  <div id="svg-container">
-    <svg id="svg1">
-      <path id="path1" d="M0 0" stroke-width="0.1em"/>
-    </svg>
-  </div>
 
   <header>
       <div id="logo">
@@ -53,13 +43,68 @@
     <div class="page-container">
       <div class="text-container">
         <h3>About me</h3>
-      <p>Recently completed Bachelor in Computer Graphic Arts at The Animation Workshop.
-        I am currently working as Technical Director at Copenhagen Bombay Productions.
-        I will be open to work from the 5th of September 2022, preferably in Copenhagen or Remote.</p>
+        <div class="decorated-text-box">
+          <div class="decorative-line"></div>
+          <div class="text-box">
+              Recently completed Bachelor in Computer Graphic Arts at The Animation Workshop.
+              I am currently working as Technical Director at Copenhagen Bombay Productions.
+              I will be open to work from the 5th of September 2022, preferably in Copenhagen or Remote.
+          </div>
+        </div>
+      <p></p>
       </div>
       <div class="text-container">
         <h3>Experience</h3>
-        <div class="timeline-container" id="timeline">
+        <div class="decorated-text-box">
+          <div class="decorative-line"></div>
+          <div class="text-box">
+            <div class="experience-item">
+              <div class="experience-date">
+                2021  Jun - Present
+              </div>
+              <div class="experience-title">
+                <b class="highlighted-bold">Technical Director,</b> Copenhagen Bombay
+              </div>
+              <div class="experience-description">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. In voluptas iure.
+              </div>
+            </div>
+            <div class="experience-item">
+              <div class="experience-date">
+                2020 Sep - Nov
+              </div>
+              <div class="experience-title">
+                <b class="highlighted-bold">Internship,</b> The Gentlemen Broncos VFX
+              </div>
+              <div class="experience-description">
+                Pipeline Assistant.
+              </div>
+            </div>
+            <div class="experience-item">
+              <div class="experience-date">
+                2020 - 2019
+              </div>
+              <div class="experience-title">
+                <b class="highlighted-bold">Technical Director,</b> The Animation Workshop
+              </div>
+              <div class="experience-description">
+                Nomads, 3D animated short film.
+              </div>
+            </div>
+            <div class="experience-item">
+              <div class="experience-date">
+                2019 - 2018
+              </div>
+              <div class="experience-title">
+                <b class="highlighted-bold">Technical Director,</b> EDRi
+              </div>
+              <div class="experience-description">
+                Intrusive Mailman, NGO Commercial.
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="timeline-container" id="timeline">
           <ul>
             <div class="timeline-item" id="timeline-item-one">
               <div class="time-label-container">
@@ -114,10 +159,9 @@
               </div>
             </div>
           </ul>
-        </div>
+        </div> -->
       </div>
     </div>
-    <script src="svgDraw.js"></script> 
   </main>
 </body>
 </html>
