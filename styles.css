@@ -269,7 +269,6 @@ h3 {
     display: grid;
     grid-auto-flow: auto;
     grid-template-columns: repeat(auto-fit, 86px);
-    /* justify-content: right; */
 }
 
 .software-icon {
