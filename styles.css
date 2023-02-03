@@ -268,11 +268,11 @@ h3 {
 .software-grid {
     display: grid;
     grid-auto-flow: auto;
-    grid-template-columns: repeat(auto-fit, 86px);
+    grid-template-columns: repeat(auto-fit, 64px);
 }
 
 .software-icon {
-    height: 64px;
-    width: 64px;
-    padding: 11px;
+    height: 48px;
+    width: 48px;
+    padding: 8px;
 }
