@@ -3,6 +3,7 @@
     --page-blue: rgb(9, 10, 17);
     --highlight-orange: rgb(255, 174, 0);
     --dull-white: hsl(233, 15%, 70%);
+    --super-dull-white: hsl(231, 6%, 42%);
 }
 
 html {
@@ -177,6 +178,9 @@ main {
 .reel {
     width: 1fr !important;
     height: auto !important;
+
+    border-style: none;
+    border-color: var(--highlight-orange);
 }
 
 .page-container {
@@ -185,8 +189,14 @@ main {
     margin-top: 15vw;
 
     padding: 2vw 5%;
+    /* padding-bottom: 30px; */
 
     height: fit-content;
+}
+
+#contact {
+    margin-top: 6vw;
+    margin-bottom: 15vw;
 }
 
 @media screen and (max-width: 767px) {
@@ -195,6 +205,12 @@ main {
     
         margin-top: 15vw;
         padding: 2vw 5%;
+    }
+}
+
+@media screen and (min-width: 2560px) {
+    .page-container {
+        margin-top: 380px;
     }
 }
 
@@ -251,6 +267,47 @@ h3 {
     padding-bottom: 4px;
 }
 
+.experience-title {
+    font-family: SF Pro;
+    font-size: 16pt;
+    font-weight: 400;
+    padding-bottom: 4px;
+}
+
+.experience-title-lb {
+    font-family: SF Pro;
+    font-size: 16pt;
+    font-weight: 400;
+    padding-bottom: 4px;
+    display: none;
+}
+
+@media screen and (max-width: 700px) {
+    .experience-title {
+        display: none;
+    }
+
+    .experience-title-lb {
+        display: grid;
+    }
+}
+
+
+.language-item {
+    padding-bottom: 12px;
+}
+
+.language-item:last-of-type {
+    padding-bottom: 0px;
+}
+
+.language-title {
+    font-family: SF Pro;
+    font-size: 16pt;
+    font-weight: 400;
+    padding-bottom: 4px;
+}
+
 .highlighted-bold {
     font-family: SF Pro;
     font-size: 16pt;
@@ -275,4 +332,89 @@ h3 {
     height: 48px;
     width: 48px;
     padding: 8px;
+}
+
+.bottom-note {
+    text-align: center;
+    font-family: SF Pro;
+    font-size: 16pt;
+    font-weight: 300;
+    color: var(--highlight-orange);
+    padding-bottom: 0px;
+}
+
+.page-container#contact {
+    margin-top: 15vw;
+    padding: 0px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.email {
+    text-align: center;
+    font-family: SF Pro;
+    font-size: 35pt;
+    font-weight: 800;
+    color: var(--highlight-orange);
+}
+
+.email-link {
+    text-decoration: none;
+    color: var(--highlight-orange);
+    
+}
+
+.email-link:hover {
+    color: #2ceff9;
+    font-weight: 1000;
+}
+
+.phone {
+    text-align: center;
+    font-family: SF Pro;
+    font-size: 35pt;
+    font-weight: 400;
+    color: white;
+}
+
+@media screen and (max-width: 767px) {
+    .page-container#contact {
+        padding: 0px;
+        padding-top: 10vw;
+        padding-bottom: 10vw;
+
+        margin-top: 15vw;
+        /* padding: 2vw 5%; */
+    }
+
+    .email {
+        font-size: 6vw;
+    }
+
+    .phone {
+        font-size: 6vw;
+    }
+
+    .bottom-note {
+        text-align: center;
+        font-family: SF Pro;
+        font-size: 2.9vw;
+        font-weight: 300;
+        color: var(--highlight-orange);
+        padding-bottom: 0px;
+    }
+}
+
+@media screen and (min-width: 2560px) {
+    .page-container#contact {
+        margin-top: 380px;
+        margin-bottom: 380px;
+    }
+}
+
+footer {
+    color: var(--dull-white);
+    font-size: 12px;
+    padding: 12px;
+    color: var(--super-dull-white);
 }
